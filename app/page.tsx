@@ -1,30 +1,33 @@
+"use client"
 import Image from 'next/image'
-import { faAngleRight } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import Select from 'react-select'
+import Nav from './components/nav/Nav'
+import { GoMail } from "react-icons/go";
 
 export default function Home() {
-  return (
-    <div className='relative'>
-      <nav className='fixed top-0 h-[90vh] w-[12vw] bg-greenC8F3B0 text-black font-semibold flex flex-col justify-between py-10 pl-3'>
-        <a href="">Login </a>
-        <div className='flex flex-col'>
-          <a href="">Locations</a>
-          <a href="">Tenants +</a>
-          <a href="">Owners +</a>
-        </div>
-        <a href="">Contact</a>
-      </nav>
-      <Image
-        className="absolute top-0 right-0"
-        height="230"
-        width="230"
-        alt="logo"
-        src="/images/logo.png"
-      />
+  const interestOptions = [
+    { value: 'Apartments', label: 'Apartments' },
+    { value: 'Townhomes', label: 'Townhomes' },
+    { value: 'Single-family homes', label: 'homes' },
+    { value: 'Duplexes', label: 'Duplexes' }
+  ]
 
-      <main className='pt-[15vh] ml-[12vw]'>
+  return (
+    <div className='relative overflow-hidden'>
+      <Nav/>
+      <a href="/">
+        <Image
+          className="absolute top-0 right-0"
+          height="230"
+          width="230"
+          alt="logo"
+          src="/images/logo.png"
+        />
+      </a>
+
+      <main className='pt-[15vh] ml-[9vw]'>
         {/* Introduction Section */}
-        <section className='h-[100vh] relative'>
+        <section className='h-[100vh] relative mb-[20vh]'>
           <h1 className='text-4xl font-semibold w-[45vw] text-center absolute right-0 top-[30%]'> HOUSTON'S <span className='text-greenC8F3B0 text-7xl' >#1</span> <span className='text-greenC8F3B0'>PROPERTY<br />MANAGEMENT GROUP</span></h1>
           <Image
             className="absolute z-10 top-[8%] left-[5%]"
@@ -36,14 +39,14 @@ export default function Home() {
           <Image
             className="absolute z-5 bottom-0 left-[4%]"
             height="1"
-            width="1180"
-            alt="logo"
+            width="1230"
+            alt="houston"
             src="/images/houston.png"
           />
         </section>
 
         {/* Why ONIT Section */}
-        <section className='mt-[5%] relative h-[100vh]'>
+        <section className='mt-[5%] relative h-[100vh] mb-[10vh]'>
           <div className='w-[40vw] relative top-[10%] left-[50%] font-semibold'>
             <h1 className='text-right'><span className='text-5xl'>WHY <span className='text-greenC8F3B0'>ONIT?</span></span></h1>
             <p className='text-right'>At Onit Property Management, we recognize the challenges associated with owning a rental property.
@@ -68,11 +71,11 @@ export default function Home() {
         </section>
         {/* Consultation Section */}
         <section className='h-[70vh] flex flex-col items-center gap-[15%]'>
-          <p className='text-greenC8F3B0'>
+          <p className='text-greenC8F3B0 text-lg font-semibold'>
             Loved by people who put their clients at the center of their property owner journey.
           </p>
           {/* consultation container */}
-          <div className='relative h-[40vh] w-[50vw] bg-greenC8F3B0 rounded-3xl '>
+          <div className='relative h-[40vh] w-[50vw] bg-gradient-to-b from-greenC8F3B0 to-rgba-200-243-176-10 rounded-3xl border-solid border-white border-[1px] '>
             <div className='relative top-[20%] left-[8%]'>
               <p className='text-3xl font-bold'>GET STARTED!</p>
               <p className='w-[50%] text-[11px]'>
@@ -81,7 +84,7 @@ export default function Home() {
                 to learn more about what we can do for you!
               </p>
             </div>
-            <div className='relative h-[20%] w-[50%] top-[30%] left-[8%] flex bg-gray-700 rounded-full items-center justify-center'>
+            <div className='relative h-[20%] w-[50%] top-[30%] left-[8%] flex bg-gray3E3E3E shadow-consultationButton rounded-full items-center justify-center hover:bg-black hover:cursor-pointer'>
               <h2 className=''>SCHEDULE A CONSULTATION</h2>
             </div>
             <Image
@@ -95,13 +98,31 @@ export default function Home() {
         </section>
 
         {/* Mail list section */}
-        <section className='relative h-[100vh] flex justify-center gap-[10%]'>
-          <form className='bg-greenC8F3B0 h-[65%] w-[35%] flex flex-col items-center gap-[9%] pt-[8%]'>
-            <input className='w-[75%] h-[8%]' type='text'></input>
-            <input className='w-[75%] h-[8%]' type='text'></input>
-            <input className='w-[75%] h-[8%]' type='text'></input>
-            <input className='w-[75%] h-[8%]' type='text'></input>
-            <button className='h-[10%] w-[40%] bg-white text-black rounded-full font-semibold' type='submit'>Submit</button>
+        <section className='relative h-[100vh] flex justify-center gap-[10%] pt-[10%] mb-[10vh]'>
+          <form className='bg-green96B684 h-[78%] w-[35%]   pt-[1%] rounded-[20px]'>
+          <GoMail className='w-[3rem] h-[3rem] text-black ml-auto mr-auto'/>
+          <p className='text-black text-xl font-semibold text-center'>Newsletter</p>
+            <p className='text-black text-xl font-semibold text-center'>Stay Informed with Onit</p>
+            <div className='mt-[5%] ml-[10%] flex flex-col gap-[2rem] text-black font-semibold'>
+              {/* name input */}
+              <div className='flex flex-col'>
+                <label>Name</label>
+                  <input className='w-[88%] h-[2.5rem] border-[2px] rounded-[5px] border-grayA1A1A1 pl-[5px]' type='text' id='firstName' placeholder='full name'></input>
+              </div>
+              {/* email input */}
+              <div className='flex flex-col'>
+                <label htmlFor="email">Email</label>
+                <input className='w-[88%] h-[2.5rem] border-[2px] mt-[0.5rem] rounded-[5px] border-grayA1A1A1 pl-[5px]' type='text' id='email' placeholder='mail@example.com'></input>
+              </div>
+              {/* interests input */}
+              <div>
+                <label>What Properties are you Interested in?</label>
+                <Select isMulti options={interestOptions} className='w-[88%] h-[2rem mt-[0.5rem]' />
+              </div>
+            </div>
+            <div className='text-center mt-[8%]'>
+              <button className='h-[2.5rem] w-[9.5rem] bg-green70AD40 text-white hover:bg-gray3E3E3E  rounded-full font-semibold shadow-mailListButton' type='submit'>Subscribe</button>
+            </div>
           </form>
           <div className='relative top-[20%] text-center flex flex-col gap-[2%]'>
             <h2 className='text-greenC8F3B0 text-2xl font-semibold'>Join Our Mail List</h2>
@@ -121,46 +142,51 @@ export default function Home() {
               aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
               cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.”
             </p>
-            </div>
-            <div className='flex flex-col text-center gap-[5vh]'>
-              <Image
-                className=" rounded-full"
-                height="250"
-                width="250"
-                alt="logo"
-                src="/images/testimonial1.png"
-              />
-              <p className='text-greenC8F3B0 text-xl font-semibold'>Alexandra Nguyen</p>
-            </div>
+          </div>
+          <div className='flex flex-col text-center gap-[5vh]'>
+            <Image
+              className=" rounded-full"
+              height="250"
+              width="250"
+              alt="logo"
+              src="/images/testimonial1.png"
+            />
+            <p className='text-greenC8F3B0 text-xl font-semibold'>Alexandra Nguyen</p>
+          </div>
         </section>
+
         <footer className='h-[100vh] w-[80%] flex flex-col ml-auto mr-auto border-t-4 border-t-greenC8F3B0 pt-[8%] gap-[40%]'>
           <div className='flex justify-between'>
             <div className='flex flex-col text-5xl gap-[8vh]'>
-              <a href=''>Locations +</a>
-              <a href=''>Owners +</a>
-              <a href=''>Tenants +</a>
+              <a href='' className='hover:text-greenC8F3B0'>Locations +</a>
+              <a href='' className='hover:text-greenC8F3B0'>Owners +</a>
+              <a href='' className='hover:text-greenC8F3B0'>Tenants +</a>
             </div>
-            <div className='flex flex-col text-xl gap-[15%] text-center'> 
-            <a href=''>Contact</a>
-            <a href=''>Pay Rent</a>
-            <a href=''>Services</a>
-            <a href=''>Residents</a>
-            <a href=''>Maintainence</a>
+            <div className='flex flex-col text-xl gap-[15%] text-center'>
+              <a href='' className='hover:text-greenC8F3B0'>Contact</a>
+              <a href='' className='hover:text-greenC8F3B0'>Pay Rent</a>
+              <a href='' className='hover:text-greenC8F3B0'>Services</a>
+              <a href='' className='hover:text-greenC8F3B0'>Residents</a>
+              <a href='' className='hover:text-greenC8F3B0'>Maintainence</a>
             </div>
           </div>
           <div className='flex justify-between relative'>
-            <div className='relative flex h-[55%] w-[25%] items-center justify-center gap-[20%] border-[1px] border-greenC8F3B0 rounded-full'>
-              <p>SIGN UP</p>
-              <span className='absolute h-[99%] w-[1px] bg-greenC8F3B0'></span>
-              <p>LOGIN</p>
+            <div className='flex'>
+              <div className='flex items-center justify-center h-[4rem] w-[7rem] border-[1px] border-greenC8F3B0 rounded-l-full hover:cursor-pointer hover:bg-greenC8F3B0'>
+                SIGN UP
+              </div>
+              <div className='flex items-center justify-center h-[4rem] w-[7rem] border-[1px] border-l-[0px] border-greenC8F3B0 rounded-r-full hover:cursor-pointer hover:bg-greenC8F3B0'>
+                SIGN UP
+              </div>
             </div>
-          <Image
-        className="relative right-[-1.5%] bottom-[33%]"
-        height="200"
-        width="200"
-        alt="logo"
-        src="/images/logo.png"
-      />
+
+            <Image
+              className="relative right-[-1.5%] bottom-[20%]"
+              height="200"
+              width="200"
+              alt="logo"
+              src="/images/logo.png"
+            />
           </div>
         </footer>
       </main>
