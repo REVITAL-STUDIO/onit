@@ -1,7 +1,6 @@
 import { MdMailOutline, MdLocationOn } from "react-icons/md";
 import { FaPhoneAlt, FaFacebookSquare, FaLinkedin, FaInstagram } from "react-icons/fa";
 import { IoMdClose } from "react-icons/io";
-
 import Image from "next/image";
 
 const Contact = () => {

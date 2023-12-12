@@ -14,7 +14,7 @@ const Locations = () => {
                 alt="listing1"
                 src="/images/heights1.png"
             />
-            <div className='flex flex-col text-sm w-[20%] gap-[10%]'>
+            <div className='flex flex-col text-sm w-[25%] gap-[10%]'>
                 <p>
                     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
                     ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
@@ -34,7 +34,7 @@ const Locations = () => {
                 alt="listing2"
                 src="/images/heights2.jpg"
             />
-            <div className='flex flex-col text-sm w-[20%] gap-[10%]'>
+            <div className='flex flex-col text-sm w-[25%] gap-[10%]'>
                 <p>
                     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
                     ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
@@ -54,7 +54,7 @@ const Locations = () => {
                 alt="listing3"
                 src="/images/heights3.jpg"
             />
-            <div className='flex flex-col text-sm w-[20%] gap-[10%]'>
+            <div className='flex flex-col text-sm w-[25%] gap-[10%]'>
                 <p>
                     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
                     ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
@@ -77,7 +77,7 @@ const Locations = () => {
                 alt="listing1"
                 src="/images/montrose1.png"
             />
-            <div className='flex flex-col text-sm w-[20%] gap-[10%]'>
+            <div className='flex flex-col text-sm w-[25%] gap-[10%]'>
                 <p>
                     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
                     ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
@@ -97,7 +97,7 @@ const Locations = () => {
                 alt="listing2"
                 src="/images/montrose2.webp"
             />
-            <div className='flex flex-col text-sm w-[20%] gap-[10%]'>
+            <div className='flex flex-col text-sm w-[25%] gap-[10%]'>
                 <p>
                     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
                     ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
@@ -117,7 +117,7 @@ const Locations = () => {
                 alt="listing3"
                 src="/images/montrose3.jpg"
             />
-            <div className='flex flex-col text-sm w-[20%] gap-[10%]'>
+            <div className='flex flex-col text-sm w-[25%] gap-[10%]'>
                 <p>
                     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
                     ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
@@ -139,7 +139,7 @@ const Locations = () => {
                 alt="listing1"
                 src="/images/katy1.png"
             />
-            <div className='flex flex-col text-sm w-[20%] gap-[10%]'>
+            <div className='flex flex-col text-sm w-[25%] gap-[10%]'>
                 <p>
                     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
                     ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
@@ -159,7 +159,7 @@ const Locations = () => {
                 alt="listing2"
                 src="/images/katy2.jpg"
             />
-            <div className='flex flex-col text-sm w-[20%] gap-[10%]'>
+            <div className='flex flex-col text-sm w-[25%] gap-[10%]'>
                 <p>
                     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
                     ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
@@ -179,7 +179,7 @@ const Locations = () => {
                 alt="listing3"
                 src="/images/katy3.jpg"
             />
-            <div className='flex flex-col text-sm w-[20%] gap-[10%]'>
+            <div className='flex flex-col text-sm w-[25%] gap-[10%]'>
                 <p>
                     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
                     ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
@@ -194,7 +194,7 @@ const Locations = () => {
 
 
     return (
-        <div className='relative'>
+        <div className='relative font-montserrat'>
             <Nav/>
             <a href="/">
                 <Image

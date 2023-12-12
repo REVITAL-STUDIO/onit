@@ -1,9 +1,10 @@
 "use client"
+import './globals.css';
 import Image from 'next/image'
 import Select from 'react-select'
 import Nav from './components/nav/Nav'
 import { GoMail } from "react-icons/go";
-
+import TestimonialCarousel from './components/carousel/TestimonialCarousel';
 export default function Home() {
   const interestOptions = [
     { value: 'Apartments', label: 'Apartments' },
@@ -13,8 +14,8 @@ export default function Home() {
   ]
 
   return (
-    <div className='relative overflow-hidden'>
-      <Nav/>
+    <div className='relative overflow-hidden font-montserrat'>
+      <Nav />
       <a href="/">
         <Image
           className="absolute top-0 right-0"
@@ -71,7 +72,7 @@ export default function Home() {
         </section>
         {/* Consultation Section */}
         <section className='h-[70vh] flex flex-col items-center gap-[15%]'>
-          <p className='text-greenC8F3B0 text-lg font-semibold'>
+          <p className='text-greenC8F3B0 text-[1.07rem] font-semibold'>
             Loved by people who put their clients at the center of their property owner journey.
           </p>
           {/* consultation container */}
@@ -100,14 +101,14 @@ export default function Home() {
         {/* Mail list section */}
         <section className='relative h-[100vh] flex justify-center gap-[10%] pt-[10%] mb-[10vh]'>
           <form className='bg-green96B684 h-[78%] w-[35%]   pt-[1%] rounded-[20px]'>
-          <GoMail className='w-[3rem] h-[3rem] text-black ml-auto mr-auto'/>
-          <p className='text-black text-xl font-semibold text-center'>Newsletter</p>
+            <GoMail className='w-[3rem] h-[3rem] text-black ml-auto mr-auto' />
+            <p className='text-black text-xl font-semibold text-center'>Newsletter</p>
             <p className='text-black text-xl font-semibold text-center'>Stay Informed with Onit</p>
             <div className='mt-[5%] ml-[10%] flex flex-col gap-[2rem] text-black font-semibold'>
               {/* name input */}
               <div className='flex flex-col'>
                 <label>Name</label>
-                  <input className='w-[88%] h-[2.5rem] border-[2px] rounded-[5px] border-grayA1A1A1 pl-[5px]' type='text' id='firstName' placeholder='full name'></input>
+                <input className='w-[88%] h-[2.5rem] border-[2px] rounded-[5px] border-grayA1A1A1 pl-[5px]' type='text' id='firstName' placeholder='full name'></input>
               </div>
               {/* email input */}
               <div className='flex flex-col'>
@@ -127,13 +128,13 @@ export default function Home() {
           <div className='relative top-[20%] text-center flex flex-col gap-[2%]'>
             <h2 className='text-greenC8F3B0 text-2xl font-semibold'>Join Our Mail List</h2>
             <p>
-              Get exclusive advice for improving the value of your asset!
+            Be the first to know about new listings and special offers!
             </p>
           </div>
         </section>
 
         {/* Testimonies Section */}
-        <section className='flex gap-[10%] justify-center mb-[20%]'>
+        {/* <section className='flex gap-[10%] justify-center mb-[20%]'>
           <div className='flex flex-col w-[50%] gap-[10%]'>
             <h1 className='text-2xl font-semibold text-greenC8F3B0'>Testimonials</h1>
             <p>
@@ -152,6 +153,12 @@ export default function Home() {
               src="/images/testimonial1.png"
             />
             <p className='text-greenC8F3B0 text-xl font-semibold'>Alexandra Nguyen</p>
+          </div>
+        </section> */}
+        <section className='flex flex-col gap-[10%] mb-[10rem]'>
+          <h1 className='text-2xl font-semibold text-greenC8F3B0 w-[10rem] relative left-[13.5rem] top-[2rem]'>Testimonials</h1>
+          <div className='mx-auto'>
+            <TestimonialCarousel />
           </div>
         </section>
 

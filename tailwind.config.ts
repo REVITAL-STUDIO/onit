@@ -40,7 +40,7 @@ const config: Config = {
         montserrat: ['Montserrat', 'sans-serif'],
       },
       fontWeight: {
-        'custom-thin': '5', // Replace 'custom-thin' with your preferred class name
+        'custom-thin': '100', // Replace 'custom-thin' with your preferred class name
         // Add other custom font weights as needed
       },
     },

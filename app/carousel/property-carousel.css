@@ -1,9 +1,0 @@
-#thumbnail-slider .splide__slide {
-    opacity: 0.6;
-  }
-  
-  #thumbnail-slider .splide__slide.is-active {
-    opacity: 1;
-    border: 3px green solid;
-  }
-
