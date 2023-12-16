@@ -205,35 +205,35 @@ const Locations = () => {
                     src="/images/logo.png"
                 />
             </a>
-            <h1 className='relative text-greenC8F3B0 font-bold text-6xl  mb-[20vh] ml-[20vh] top-[10rem]'>Explore Our Properties</h1>
-            <main className='pt-[15vh] ml-[19vw] mt-[10vh]'>
+            <h1 className='relative text-greenC8F3B0 font-bold text-6xl  mb-[10rem] ml-[8rem] top-[10rem]'>Explore Our Properties</h1>
+            <main className='pt-[10rem] ml-[18rem] mt-[5rem]'>
                 
                 {/* The Heights listings */}
-                <section className='relative h-[100vh] mt-[10vh] mb-[15vh]'>
+                <section className='relative   mb-[10rem]'>
                     <h2 className='text-grayA1A1A1 font-bold text-5xl mb-[5%]'>The Heights</h2>
                     <ListingsCarousel slides={heightsSlides} id="heights">
                     </ListingsCarousel>
                 </section>
                 {/* Montrose listings */}
-                <section className='relative h-[100vh] mb-[15vh]'>
+                <section className='relative  mb-[10rem]'>
                     <h2 className='text-grayA1A1A1 font-bold text-5xl mb-[5%]'>Montrose</h2>
                     <ListingsCarousel slides={montroseSlides} id="montrose">
                     </ListingsCarousel>
                 </section>
                 {/* Katy listings */}
-                <section className='relative h-[100vh] mb-[15vh]'>
+                <section className='relative  mb-[10rem]'>
                     <h2 className='text-grayA1A1A1 font-bold text-5xl mb-[5%]'>Katy</h2>
                     <ListingsCarousel slides={katySlides} id="katy">
                     </ListingsCarousel>
                 </section>
-                <footer className='h-[100vh] w-[86%] flex flex-col   border-t-4 border-t-greenC8F3B0 pt-[8%] gap-[40%]'>
+                <footer className=' w-[86%] flex flex-col   border-t-4 border-t-greenC8F3B0 pt-[8%] gap-[40%]'>
                     <div className='flex justify-between'>
-                        <div className='flex flex-col text-5xl gap-[8vh]'>
+                        <div className='flex flex-col text-5xl gap-[3.5rem]'>
                             <a href='' className='hover:text-greenC8F3B0'>Locations +</a>
                             <a href='' className='hover:text-greenC8F3B0'>Owners +</a>
                             <a href='' className='hover:text-greenC8F3B0'>Tenants +</a>
                         </div>
-                        <div className='flex flex-col text-xl gap-[15%] text-center'>
+                        <div className='flex flex-col text-xl gap-[1.5rem] text-center'>
                             <a href='' className='hover:text-greenC8F3B0'>Contact</a>
                             <a href='' className='hover:text-greenC8F3B0'>Pay Rent</a>
                             <a href='' className='hover:text-greenC8F3B0'>Services</a>
@@ -241,16 +241,7 @@ const Locations = () => {
                             <a href='' className='hover:text-greenC8F3B0'>Maintainence</a>
                         </div>
                     </div>
-                    <div className='flex justify-between relative'>
-                        <div className='flex'>
-                            <div className='flex items-center justify-center h-[4rem] w-[7rem] border-[1px] border-greenC8F3B0 rounded-l-full hover:cursor-pointer hover:bg-greenC8F3B0'>
-                                SIGN UP
-                            </div>
-                            <div className='flex items-center justify-center h-[4rem] w-[7rem] border-[1px] border-l-[0px] border-greenC8F3B0 rounded-r-full hover:cursor-pointer hover:bg-greenC8F3B0'>
-                                SIGN UP
-                            </div>
-                        </div>
-
+                    <div className='flex justify-end relative'>
                         <Image
                             className="relative right-[-1.5%] bottom-[20%]"
                             height="200"

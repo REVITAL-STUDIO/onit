@@ -15,8 +15,8 @@ interface TestimonialCarouselProps {
 const TestimonialCarousel = () => {
 
     const testimonialSlides = [
-        <div className='flex gap-[10%] justify-center'>
-            <p className='w-[50%] mt-[5%]'>
+        <div className='flex  justify-between'>
+            <p className='w-[60%] mt-[5%]'>
                 “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
                 aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
                 aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
@@ -34,8 +34,8 @@ const TestimonialCarousel = () => {
             </div>
         </div>
         ,
-        <div className='flex gap-[10%] justify-center'>
-            <p className='w-[50%] mt-[5%]'>
+        <div className='flex  justify-between'>
+            <p className='w-[60%] mt-[5%]'>
                 “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
                 aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
                 aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
@@ -52,8 +52,8 @@ const TestimonialCarousel = () => {
                 <p className='text-greenC8F3B0 text-xl font-semibold '>David Mensah</p>
             </div>
         </div>,
-        <div className='flex gap-[10%] justify-center'>
-            <p className='w-[50%] mt-[5%]'>
+        <div className='flex  justify-between'>
+            <p className='w-[60%] mt-[5%]'>
                 “Lorem ipsum dolor sit amet, consectetur adipiscing eSlit, sed do eiusmod tempor incididunt ut labore et dolore magna
                 aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
                 aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
@@ -103,18 +103,18 @@ const TestimonialCarousel = () => {
     }, []);
     return (
         <div className=' flex flex-col w-[1000px] gap-[1rem] relative'>
-                <div id='main-slider' className="splide" aria-label="Splide Basic HTML Example">
-                    <div className="splide__track relative">
-                        <ul className="splide__list">
-                            {testimonialSlides.map((slide: React.ReactNode) => (
-                                <li className="splide__slide">
-                                    {slide}
-                                </li>
-                            ))}
-                        </ul>
-                    </div>
+            <div id='main-slider' className="splide" aria-label="Splide Basic HTML Example">
+                <div className="splide__track relative">
+                    <ul className="splide__list">
+                        {testimonialSlides.map((slide: React.ReactNode) => (
+                            <li className="splide__slide">
+                                {slide}
+                            </li>
+                        ))}
+                    </ul>
                 </div>
             </div>
+        </div>
     )
 }
 

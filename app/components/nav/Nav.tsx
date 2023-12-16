@@ -4,7 +4,7 @@ import { IoMdMail } from "react-icons/io";
 const Nav = () => {
 
     return (
-        <nav className='fixed top-0 h-[100vh] w-[9vw] bg-green96B684 text-black font-semibold flex flex-col justify-between py-10 pl-3'>
+        <nav className='fixed top-0 min-h-full bg-green96B684 text-black font-semibold flex flex-col justify-between py-10 px-3'>
           <a href="/locations" className='hover:text-white'>Locations</a>
         <div className='flex flex-col'>
           <a href="" className='hover:text-white'>Tenants +</a>

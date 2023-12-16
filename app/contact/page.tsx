@@ -6,8 +6,7 @@ import Image from "next/image";
 const Contact = () => {
 
     return (
-        <div className="overflow-hidden overflow-y-hidden h-screen font-montserrat">
-            <div className="absolute inset-0">
+        <div className="overflow-hidden overflow-y-hidden h-[100%] font-montserrat">
                 <Image
                     src="/images/houston-city.png"
                     alt="City"
@@ -16,7 +15,6 @@ const Contact = () => {
                     quality={100}
                 />
                 <div className="absolute inset-0 bg-black opacity-81"></div>
-            </div>
             <div className="flex flex-col relative z-10 h-full justify-center items-center mt-[2rem]">
                 <a href='/'>
                     <IoMdClose className='h-[3rem] w-[3rem] text-white absolute right-[4rem] top-0 hover:text-greenA6CA96 hover:cursor-pointer' />
@@ -67,14 +65,14 @@ const Contact = () => {
                         </div>
                     </div>
                     <div>
-                        <form className="w-[30vw] h-[66vh] bg-white relative left-[5rem] pt-[2rem]">
-                            <p className="text-xl text-black text-center">Send a Message</p>
-                            <div className="flex flex-col gap-[3rem] items-center mt-[3rem]">
-                                <input className="w-[80%] h-[3rem] border-[2px] border-black pl-[0.5rem]" placeholder="Full Name" id="name"></input>
-                                <input className="w-[80%] h-[3rem] border-[2px] border-black pl-[0.5rem]" placeholder="Email" id="email"></input>
-                                <textarea className="w-[80%] h-[6rem] border-[2px] border-black pl-[0.5rem]" placeholder="Message"></textarea>
+                        <form className="w-[25rem]  bg-white relative left-[5rem] pt-[2rem] pb-[1.5rem] text-black">
+                            <p className="text-2xl text-center text-green-700">Send a Message</p>
+                            <div className="flex flex-col gap-[3rem] items-center mt-[3rem] pb-[2rem]">
+                                <input className="w-[80%] h-[3rem] border-[2px] border-black pl-[0.5rem] focus:outline-none focus:bg-green-100" placeholder="Full Name" id="name"></input>
+                                <input className="w-[80%] h-[3rem] border-[2px] border-black pl-[0.5rem] focus:outline-none focus:bg-green-100" placeholder="Email" id="email"></input>
+                                <textarea className="w-[80%] h-[6rem] border-[2px] border-black pl-[0.5rem] focus:outline-none focus:bg-green-100" placeholder="Message"></textarea>
                             </div>
-                            <button className="w-[5.5rem] h-[2.5rem] text-black bg-green4BC904 relative top-[2.5rem] left-[1rem] ">Send</button>
+                            <button className="w-[5.5rem] h-[2.5rem] text-black bg-green4BC904 relative  left-[1rem] ">Send</button>
                         </form>
                     </div>
                 </div>

@@ -19,38 +19,38 @@ const PropertyInfoPage = () => {
             {/* About row */}
             <div>
                 <div className="relative right-[13rem]">
-                    <p className="text-green70AD40 font-semibold">About</p>
-                    <div className="flex bg-green323E2B gap-[2rem] h-[5rem] px-[0.5rem] w-[40rem] items-center rounded-md">
+                    <p className="text-green70AD40 font-semibold mb-[0.5rem]">About</p>
+                    <div className="flex bg-green323E2B justify-between py-2 px-2 w-[40rem] items-center rounded-md">
                         {/* metric cards */}
-                        <div className="flex-col w-[6rem] h-[4rem] bg-green5B6D52 rounded-lg ">
+                        <div className="flex-col w-[6rem] py-1 bg-green5B6D52 rounded-lg ">
                             <p className="ml-[0.4rem] mb-[0.6rem] font-semibold">Bedrooms</p>
                             <div className="flex gap-[3rem]">
                                 <FaBed className='w-[1.7rem] h-[1.7rem] relative left-[0.5rem] text-greenC8F0B1' />
                                 <p className="text-xl relative right-[0.5rem]">4</p>
                             </div>
                         </div>
-                        <div className="flex-col w-[6rem] h-[4rem] bg-green5B6D52 rounded-lg">
+                        <div className="flex-col w-[6rem] py-1 bg-green5B6D52 rounded-lg">
                             <p className="pl-[0.4rem] mb-[0.6rem] font-semibold">Baths</p>
                             <div className="flex gap-[3rem]">
                                 <FaShower className='w-[1.7rem] h-[1.7rem] relative left-[0.5rem] bottom-[0.2rem] text-greenC8F0B1' />
                                 <p className="text-xl relative right-[0.5rem]">2</p>
                             </div>
                         </div>
-                        <div className="flex-col w-[8.2rem] h-[4rem] bg-green5B6D52 rounded-lg">
+                        <div className="flex-col w-[8.2rem] py-1 bg-green5B6D52 rounded-lg">
                             <p className="pl-[0.4rem] mb-[0.6rem] font-semibold">Size</p>
                             <div className="flex gap-[2.8rem]">
                                 <SlSizeFullscreen className='w-[1.8rem] h-[1.8rem] relative left-[0.5rem] bottom-[0.2rem] text-greenC8F0B1' />
                                 <p className="text-xl relative right-[1.2rem]">450<span className="text-sm">ft</span> <span className="absolute text-xs">2</span></p>
                             </div>
                         </div>
-                        <div className="flex-col w-[6rem] h-[4rem] bg-green5B6D52 rounded-lg">
+                        <div className="flex-col w-[6rem] py-1 bg-green5B6D52 rounded-lg">
                             <p className="pl-[0.4rem] mb-[0.6rem] font-semibold">Capacity</p>
                             <div className="flex gap-[3rem]">
                                 <IoIosPeople className='w-[2rem] h-[2rem] relative left-[0.5rem] bottom-[0.2rem] text-greenC8F0B1' />
                                 <p className="text-xl relative right-[0.5rem]">8</p>
                             </div>
                         </div>
-                        <div className="flex-col w-[7rem] h-[4rem] bg-green5B6D52 rounded-lg">
+                        <div className="flex-col w-[7rem] py-1 bg-green5B6D52 rounded-lg">
                             <p className="pl-[0.4rem] mb-[0.6rem] font-semibold">Year Built</p>
                             <div className="flex gap-[2.5rem]">
                                 <SlCalender className='w-[1.7rem] h-[1.7rem] relative left-[0.5rem] bottom-[0.2rem] text-greenC8F0B1' />
@@ -130,9 +130,9 @@ const PropertyInfoPage = () => {
                         </div>
                     </div>
                     {/* contact form */}
-                    <div className="flex flex-col gap-[0.3rem]">
+                    <div className="flex flex-col gap-[0.3rem] mt-3">
                         <p className="text-green70AD40 text-center font-semibold mb-[0.3rem]">Property Inquiry</p>
-                        <form className="flex flex-col items-center gap-[0.8rem] h-[26.5rem] w-[21rem] pt-[1rem] bg-green728B64 rounded-lg ">
+                        <form className="flex flex-col items-center gap-[0.8rem]  w-[21rem] py-[1rem] bg-green728B64 rounded-lg ">
                             <div className="relative">
                                 <IoPersonCircle className='absolute w-[2.2rem] h-[2.2rem] left-[0.5rem] bottom-[0.3rem] text-grayA1A1A1' />
                                 <span className="absolute bottom-[0.4rem] left-[3rem] w-[13rem] h-[0.05rem] bg-grayA1A1A1 opacity-25"></span>
