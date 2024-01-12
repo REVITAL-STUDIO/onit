@@ -40,7 +40,7 @@ const ListingsCarousel: React.FC<ListingsCarouselProps> = ({slides, id}) => {
         }
     }, []);
     return (
-        <div className=' flex flex-col w-[1000px] gap-[1rem] relative'>
+        <div className=' flex flex-col w-full gap-[1rem] relative'>
             <div id={id} className="splide visible" aria-label="Splide Basic HTML Example">
                 <div className="splide__track relative">
                     <ul className="splide__list">
@@ -53,8 +53,8 @@ const ListingsCarousel: React.FC<ListingsCarouselProps> = ({slides, id}) => {
                 </div>
             </div>
             <div className='navigation-arrows'>
-                <button id={`${id}-prevButton`}><MdNavigateBefore className='w-[4.5rem] h-[4.5rem] absolute bottom-[-2rem] left-0 hover:text-green70AD40' /></button>
-                <button id={`${id}-nextButton`}><MdNavigateNext className='w-[4.5rem] h-[4.5rem] absolute bottom-[-2rem] right-[5rem] hover:text-green70AD40' /></button>
+                <button id={`${id}-prevButton`}><MdNavigateBefore className='w-[2.8rem] h-[2.8rem] lg:w-[4.5rem] lg:h-[4.5rem] absolute top-[46%] lg:top-[90%] -left-[6%] sm:left-0 lg:left-0 hover:text-green70AD40' /></button>
+                <button id={`${id}-nextButton`}><MdNavigateNext className='w-[2.8rem] h-[2.8rem] lg:w-[4.5rem] lg:h-[4.5rem] absolute top-[46%] lg:top-[90%] -right-[6%] sm:right-0 lg:left-[7%] hover:text-green70AD40' /></button>
             </div>
         </div>
     )

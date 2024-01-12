@@ -59,7 +59,7 @@ const PropertyCarousel = () => {
         }
     }, []);
     return (
-            <div className='w-[1000px] flex flex-col gap-[1rem] relative'>
+            <div className='w-full lg:w-[71%] max-w-[900px] flex flex-col gap-[1rem] relative'>
                 <div id='main-slider' className="splide" aria-label="Splide Basic HTML Example">
                     <div className="splide__track relative">
                         <ul className="splide__list">
@@ -73,9 +73,9 @@ const PropertyCarousel = () => {
                                     src="/images/property-pic1.png"
                                 />
                                 <div className='absolute bottom-[2rem] left-[2rem]'>
-                                    <p className='flex justify-center items-center w-[6.5rem] h-[2rem] bg-green70AD40 rounded-full'>780/month</p>
-                                    <p className='text-3xl'>4 Bedroom House in Montrose</p>
-                                    <p className='flex text-greenC8F3B0 font-semibold ml-[2rem]'><FaLocationDot className='text-green70AD40'/>1234 Fifth Ave, Houston TX 45496</p>
+                                    <p className='flex justify-center items-center w-[3rem] h-[0.85rem] lg:w-[6.5rem] lg:h-[2rem] bg-green70AD40 rounded-full text-[0.5rem] lg:text-[1rem]'>780/month</p>
+                                    <p className='text-lg lg:text-3xl'>4 Bedroom House in Montrose</p>
+                                    <p className='flex text-greenC8F3B0 font-semibold ml-[1rem] lg:ml-[2rem] text-[0.7rem] lg:text-[1rem]'><FaLocationDot className='text-green70AD40'/>1234 Fifth Ave, Houston TX 45496</p>
                                 </div>
                                 </div>
                             </li>
@@ -130,7 +130,7 @@ const PropertyCarousel = () => {
                 {/* Thumbnail Slider */}
                 <div id="thumbnail-slider" className="splide flex w-full justify-start">
                     <div className="splide__track w-full mx-[5rem]">
-                        <ul className="splide__list w-full flex justify-between">
+                        <ul className="splide__list w-full flex gap-[0.2rem] lg:gap-0 justify-between">
                             {/* Thumbnails for each slide */}
                             <li className="splide__slide">
                                 <Image
@@ -190,8 +190,8 @@ const PropertyCarousel = () => {
                     </div>
                 </div>
                 <div className='navigation-arrows'>
-                    <button id="prevButton"><MdNavigateBefore className='w-[4.5rem] h-[4.5rem] absolute bottom-[2.5rem] left-0 hover:text-green70AD40'/></button>
-                    <button id="nextButton"><MdNavigateNext className='w-[4.5rem] h-[4.5rem] absolute bottom-[2.5rem] right-0 hover:text-green70AD40'/></button>
+                    <button id="prevButton"><MdNavigateBefore className='w-[4.5rem] h-[4.5rem] absolute bottom-[1.5rem] lg:bottom-[2.5rem] left-0 hover:text-green70AD40'/></button>
+                    <button id="nextButton"><MdNavigateNext className='w-[4.5rem] h-[4.5rem] absolute bottom-[1.5rem] lg:bottom-[2.5rem] right-0 hover:text-green70AD40'/></button>
                 </div>
             </div>
     )
